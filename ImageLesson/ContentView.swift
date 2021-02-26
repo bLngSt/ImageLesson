@@ -12,10 +12,13 @@ struct ContentView: View {
         VStack {
             Image("244f2adee9e159a17c404c3a0301e08e")
                 .resizable()
-            VStack {
-                Text("Hello, world!")
-                    .padding()
-            }
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 300)
+                .overlay(
+                    Text("Hello, world!")
+                        .font(.title)
+                        .foregroundColor(Color.white)
+                )
         }
     }
 }
