@@ -11,7 +11,7 @@ struct ContentView: View {
     var body: some View {
         VStack {
             Image("244f2adee9e159a17c404c3a0301e08e")
-                
+                .resizable()
             VStack {
                 Text("Hello, world!")
                     .padding()
