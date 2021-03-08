@@ -10,15 +10,20 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image("244f2adee9e159a17c404c3a0301e08e")
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width: 300)
-                .overlay(
-                    Text("Hello, world!")
-                        .font(.title)
-                        .foregroundColor(Color.white)
-                )
+            Image("comment")
+                            .resizable()
+                .frame(width: 300.0, height: 300.0)
+                            .overlay(
+                                Text("画像の上に表示")
+                                    .font(.title)
+                                    .foregroundColor(Color.red)
+                                    .multilineTextAlignment(.center)
+                            )
+            HStack {
+                Image("star")
+                Text("上に画像を表示")
+                    .font(.title)
+            }
         }
     }
 }
